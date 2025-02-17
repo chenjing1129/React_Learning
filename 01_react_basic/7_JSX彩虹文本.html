@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7_JSX彩虹文本</title>
+    <style>
+      .black {
+        color: black;
+      }
+      .red {
+        color: red;
+      }
+      .orange {
+        color: orange;
+      }
+      .yellow {
+        color: yellow;
+      }
+      .green {
+        color: green;
+      }
+      .blue {
+        color: blue;
+      }
+      .indigo {
+        color: indigo;
+      }
+      .violet {
+        color: violet;
+      }
+      .achievement {
+        font-weight: bold;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./lib/react.js"></script>
+    <script src="./lib/react-dom.js"></script>
+    <script src="./lib/babel.js"></script>
+
+    <script type="text/babel">
+      const root = ReactDOM.createRoot(document.querySelector("#root"));
+
+      let clickCount = 0;
+      const colors = [
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "blue",
+        "indigo",
+        "violet",
+      ]; // 只包含彩虹色
+      let currentColorIndex = -1; // 初始索引为-1，表示初始颜色为黑色
+
+      const handleClick = () => {
+        clickCount++;
+        if (currentColorIndex === -1) {
+          currentColorIndex = 0; // 第一次点击后切换到红色
+        } else {
+          currentColorIndex = (currentColorIndex + 1) % colors.length; // 后续点击按彩虹色循环
+        }
+        rootRender();
+      };
+
+      const rootRender = () => {
+        const colorClass =
+          currentColorIndex === -1 ? "black" : colors[currentColorIndex];
+        const achievementMessage =
+          clickCount > 10 ? (
+            <div className="achievement">触发隐藏成就：点击超过10次！</div>
+          ) : null;
+
+        root.render(
+          <div>
+            <h2 className={colorClass}>你已经点击了 {clickCount} 次</h2>
+            {achievementMessage}
+            <button onClick={handleClick}>点我变彩虹色🌈</button>
+          </div>
+        );
+      };
+
+      rootRender(); // 初始渲染
+    </script>
+  </body>
+</html>
