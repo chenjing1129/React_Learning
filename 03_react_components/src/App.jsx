@@ -14,10 +14,11 @@
 // import InputParent from "./components/InputParent";
 // import RegistPage from "./components/RegistPage";
 
-// 
+//
 
-import MyCard from "./components/MyCard";
+// import MyCard from "./components/MyCard";
 
+import Main from "./components/Book/Main";
 const App = () => {
   // const handleClick = () => {
   //   alert("点击了按钮111111！");
@@ -40,7 +41,8 @@ const App = () => {
       <MyCarousel />
       <CardList />
       <Footer /> */}
-      <MyCard />
+      {/* <MyCard /> */}
+      <Main />
     </>
   );
 };

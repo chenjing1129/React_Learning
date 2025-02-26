@@ -1,0 +1,143 @@
+/* 全局样式 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* 主容器 */
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+/* 标题 */
+.app h1 {
+  text-align: center;
+  color: #444;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* 图书列表 */
+.book-list {
+  margin-top: 20px;
+}
+
+/* 图书项 */
+.book-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.book-item:hover {
+  background-color: #f9f9f9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-item h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.book-item p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/* 删除按钮 */
+/* 图书项操作按钮 */
+.book-item-actions {
+  display: flex;
+  gap: 10px; /* 添加按钮之间的间隔 */
+}
+
+.book-item button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin: 0 5px;
+}
+
+.book-item button:hover {
+  background-color: #cc0000;
+}
+
+/* 图书详情 */
+.book-detail {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-detail h2 {
+  margin-top: 0;
+  color: #444;
+  font-size: 1.75rem;
+}
+
+/* 表单样式 */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+form button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* 保存按钮 */
+.book-detail button[type="submit"] {
+  background-color: #28a745;
+}
+
+.book-detail button[type="submit"]:hover {
+  background-color: #218838;
+}
