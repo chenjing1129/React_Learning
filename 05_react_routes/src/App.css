@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.active-button,
+.inactive-button {
+  padding: 10px 20px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0 10px;
+}
+
+.active-button {
+  background-color: blue;
+  color: white;
+}
+
+.inactive-button {
+  background-color: transparent;
+  color: blue;
+}
