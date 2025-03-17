@@ -1,0 +1,35 @@
+nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+nav a:hover {
+  background: rgba(24, 144, 255, 0.1);
+  color: #1890ff;
+}
+
+nav a:active,
+nav a:focus {
+  background: rgba(24, 144, 255, 0.9);
+  color: white;
+}
+
+nav a.active {
+  background: rgba(24, 144, 255, 0.9);
+  color: white;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}

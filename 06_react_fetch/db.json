@@ -1,0 +1,84 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "现代前端构建工具：Vite vs Webpack",
+      "body": "在前端工程化领域，构建工具扮演着至关重要的角色。本文将深入比较Vite和Webpack这两个主流构建工具的优势与特点。Vite凭借其基于ES modules的开发服务器，提供了极快的冷启动速度和即时的热模块替换（HMR）。而Webpack则以其强大的生态系统和成熟的打包策略著称。我们将从开发体验、构建性能、生态系统等多个维度进行详细对比，帮助开发者选择最适合自己项目的构建工具。",
+      "image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg",
+      "author": "张文思",
+      "date": "2024-01-15"
+    },
+    {
+      "id": "2",
+      "title": "前端包管理工具的演进：从npm到pnpm",
+      "body": "包管理工具是前端工程化的基石。本文将追溯从npm到yarn，再到pnpm的演进历程。我们将探讨pnpm如何通过其创新的硬链接方式解决了传统包管理器面临的依赖重复和磁盘空间浪费问题。同时，文章还将介绍monorepo项目管理中包管理工具的最佳实践，以及如何通过workspace功能提升多包项目的开发效率。",
+      "image": "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
+      "author": "李明远",
+      "date": "2024-01-14"
+    },
+    {
+      "id": "3",
+      "title": "前端自动化测试实践指南",
+      "body": "高质量的前端项目离不开完善的测试体系。本文将分享前端自动化测试的最佳实践，包括单元测试、集成测试和端到端测试的策略选择。我们将使用Jest进行单元测试，React Testing Library进行组件测试，以及Cypress进行端到端测试。通过实际案例，展示如何构建可靠的测试用例，提高代码质量和项目可维护性。",
+      "image": "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg",
+      "author": "王测试",
+      "date": "2024-01-13"
+    },
+    {
+      "id": "4",
+      "title": "现代前端CI/CD流程设计",
+      "body": "持续集成和持续部署（CI/CD）是确保前端项目高效交付的关键。本文将详细介绍如何使用GitHub Actions构建前端CI/CD流水线，包括代码检查、自动化测试、构建优化和自动部署等环节。我们还将探讨如何通过环境隔离、版本控制和回滚机制来保证部署的安全性和可靠性。",
+      "image": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg",
+      "author": "陈运维",
+      "date": "2024-01-12"
+    },
+    {
+      "id": "5",
+      "title": "前端微服务架构实践",
+      "body": "随着前端应用规模的不断扩大，微前端架构应运而生。本文将深入探讨微前端的实现方案，包括基于qiankun的实践经验、微应用间通信机制的设计、公共依赖的管理策略等。同时，我们还将分享微前端架构在大型项目中的实战经验和性能优化技巧。",
+      "image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
+      "author": "赵架构",
+      "date": "2024-01-11"
+    },
+    {
+      "id": "6",
+      "title": "前端性能优化：从构建到运行时",
+      "body": "性能优化是前端工程化中的永恒主题。本文将从构建层面和运行时层面全面讨论前端性能优化策略。包括webpack构建优化、代码分割、树摇优化、资源压缩、缓存策略、懒加载实现等多个方面。通过实际案例，展示如何将这些优化策略应用到实际项目中。",
+      "image": "https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg",
+      "author": "刘性能",
+      "date": "2024-01-10"
+    },
+    {
+      "id": "7",
+      "title": "现代前端监控体系搭建",
+      "body": "前端监控是保证应用质量的重要手段。本文将介绍如何搭建完整的前端监控体系，包括性能监控、错误监控、用户行为分析等方面。我们将使用Performance API进行性能数据采集，通过错误边界捕获React应用错误，并结合埋点系统实现用户行为跟踪，最终构建一个全面的前端监控平台。",
+      "image": "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg",
+      "author": "杨监控",
+      "date": "2024-01-09"
+    },
+    {
+      "id": "8",
+      "title": "前端工程化下的代码规范与质量控制",
+      "body": "代码质量控制是前端工程化的重要组成部分。本文将分享如何通过ESLint、Prettier、StyleLint等工具建立统一的代码规范，如何通过Husky配置Git Hooks实现提交前的代码检查，以及如何通过Code Review流程提高团队协作效率。同时，我们还将探讨如何通过自动化工具提高代码质量控制的效率。",
+      "image": "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg",
+      "author": "吴规范",
+      "date": "2024-01-08"
+    },
+    {
+      "id": "9",
+      "title": "现代前端开发的TypeScript实践",
+      "body": "TypeScript已成为现代前端开发的标配。本文将深入探讨TypeScript在前端工程化中的最佳实践，包括类型系统的高级用法、装饰器模式、泛型编程等。我们还将分享如何通过TypeScript提高代码的可维护性和可读性，以及如何处理常见的类型定义问题。",
+      "image": "https://images.pexels.com/photos/1181674/pexels-photo-1181674.jpeg",
+      "author": "郑类型",
+      "date": "2024-01-07"
+    },
+    {
+      "id": "10",
+      "title": "前端工程化下的组件库开发",
+      "body": "组件库开发是前端工程化的重要实践。本文将分享如何从零开始搭建一个现代化的组件库，包括组件设计原则、文档生成、版本管理、发布流程等方面。我们将使用Storybook进行组件开发和文档管理，通过monorepo方式管理多个包，并实现自动化的测试和发布流程。",
+      "image": "https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg",
+      "author": "黄组件",
+      "date": "2024-01-06"
+    }
+  ]
+}
